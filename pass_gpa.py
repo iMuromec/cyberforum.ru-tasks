@@ -52,10 +52,7 @@ def pass_gpa(students, gpa):
 print("name\t\tgroup\tage\tmarks")
 
 for student in pass_gpa(groupmates, 4):    
-    print("%s\t%s\t%s\t%s" % (student['name'], 
-                              student['group'], 
-                              student['age'], 
-                              student['marks']))
+    print("%(name)s\t%(group)s\t%(age)s\t%(marks)s" % student)
 
 
 
